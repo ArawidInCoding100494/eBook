@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+@layer base {
+    body{@apply
+    bg-[#101622] text-white
+    }
+}
+
+@layer components{
+    .appContainer{
+        @apply  w-[70%] mx-auto 
+    }
+
+ .btnGanres {
+   @apply w-full text-left text-[#94a3b8] px-4 py-2 cursor-pointer capitalize rounded-2xl flex items-center text-2xl transition;
+}
+
+
+
+.btnGanres.active {
+  @apply bg-[#101c36] text-[#408af1] font-semibold;
+}
+
+
+.freeTitles_btn{
+    @apply p-3 bg-blue-700 text-white capitalize rounded-2xl cursor-pointer border border-blue-700
+    hover:bg-white hover:text-[blue]
+    duration-500 font-bold shadow
+}
+
+.FreeTitlesdownLinks{
+    @apply text-[#94a3b8] capitalize text-2xl pb-2 hover:text-blue-700 hover:border-b-2 duration-300 cursor-pointer
+}
+
+.FreeTitlesdownLinks.active{@apply
+text-blue-700 border-b-2 hover:text-[#94a3b8] hover:border-b-0
+}
+
+
+    
+
+    
+}
