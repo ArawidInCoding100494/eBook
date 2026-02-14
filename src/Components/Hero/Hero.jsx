@@ -72,7 +72,7 @@ const Hero = () => {
             bg-slate-900/80 backdrop-blur-lg
             transform rotate-3 flex flex-col justify-between
             shadow-[0_10px_140px_rgba(19,91,236,0.75)]
-            transition-all duration-300
+            transition-all duration-300 animate-shake
           `}>
             <span className="text-4xl text-yellow-500">🏆</span>
             <div>

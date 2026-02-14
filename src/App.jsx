@@ -27,6 +27,7 @@ const routes = createBrowserRouter(
   createRoutesFromElements(
     <>
       {/* Protected routes */}
+      <Route path="/" element={<Navigate to="/dashboard" />} />
       <Route element={<ProtectedRoutes  />}>
         <Route element={<RootLayOut />}>
           <Route path="dashboard" element={<DashBoard />} />
