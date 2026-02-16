@@ -4,6 +4,7 @@ import {
   Navigate,
   Route,
   RouterProvider,
+  createHashRouter
 } from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
@@ -18,6 +19,7 @@ import {UseGlobalContext} from "./Hooks/UseGlobalContext"
 import "../App.css";
 import DashBoard from "./Pages/DashBoard/DashBoard";
 import FreeTitles from "./Components/DashComponent/FreeTitles/FreeTitles";
+import PageNotFounded from "./Pages/Help/PageNotFounded";
 
 function App() {
   const {user} = UseGlobalContext();
@@ -27,7 +29,7 @@ const routes = createBrowserRouter(
   createRoutesFromElements(
     <>
       {/* Protected routes */}
-      <Route path="/" element={<Navigate to="/dashboard" />} />
+      <Route path="/" element={<Navigate to="/dashboard" />} />   
       <Route element={<ProtectedRoutes  />}>
         <Route element={<RootLayOut />}>
           <Route path="dashboard" element={<DashBoard />} />
@@ -35,10 +37,13 @@ const routes = createBrowserRouter(
         </Route>
       </Route>
 
+      <Route path="*" element={<PageNotFounded/>
+    } />
+
       {/* Public routes */}
       <Route
         path="LoginPage"
-        element={localStorage.getItem("token") ? <Navigate to="/dashboard" /> : <LoginPage />}
+        element={user ? <Navigate to="/dashboard" /> : <LoginPage />}
       />
       <Route
         path="SignUpPage"

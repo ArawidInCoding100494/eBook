@@ -39,7 +39,8 @@ const LoginPage = () => {
         
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("user", JSON.stringify(response.data.user));
-        window.location.href = "/dashboard";  
+        dispatch({ type: "LOGIN", payload: response.data.user })
+        navigate("/dashboard");  
 
         console.log("Login success (ID):", response.data);
 

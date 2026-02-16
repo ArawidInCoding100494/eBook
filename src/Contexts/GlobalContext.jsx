@@ -22,7 +22,7 @@ const changeState = (state, action) => {
 
 export const GlobalContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(changeState, {
-    user: null,      
+    user: JSON.parse(localStorage.getItem("user")) || null,      
     authReady: true,
   });
 
