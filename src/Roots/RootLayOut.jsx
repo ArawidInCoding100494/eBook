@@ -5,11 +5,15 @@ import Footer from '../Components/Footer/Footer'
 const RootLayOut = () => {
   return (
     <div className='h-screen flex flex-col'>
+      <header className='h-16'>
         <Header/>
-        <main className='flex-1 overflow-y-auto'>
+        </header>
+        <main className='flex-1 '>
         <Outlet/>
         </main>
+        <footer className=' hidden lg:block h-16'>
         <Footer/>
+        </footer>
     </div>
   )
 }

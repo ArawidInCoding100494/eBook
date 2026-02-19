@@ -9,22 +9,23 @@
 }
 
 @keyframes shakeCard {
-  0% { transform: rotate(3deg) translateX(0); }
-  25% { transform: rotate(4deg) translateX(-5px); }
-  50% { transform: rotate(2deg) translateX(5px); }
+  0% { transform: rotate(3deg) translateX(0); border-color: green; background-color: gold; }
+  25% { transform: rotate(4deg) translateX(-5px); background-color: rgb(148, 138, 138); }
+  50% { transform: rotate(2deg) translateX(5px); background-color: gold; }
   75% { transform: rotate(3.5deg) translateX(-3px); }
-  100% { transform: rotate(3deg) translateX(0); }
+  100% { transform: rotate(3deg) translateX(0); border-color: transparent }
   
 }
 
 .animate-shake {
   /* 0.6s davomida bir marta ishlaydi */
-  animation: shakeCard 0.6s ease-in-out;
+  animation: shakeCard 2s ease-in-out;
+  /* border: 2px solid transparent; */
 }
 
 @layer components{
     .appContainer{
-        @apply  w-[70%] mx-auto 
+        @apply  w-[80%] mx-auto 
     }
 
  .btnGanres {
@@ -45,11 +46,12 @@
 }
 
 .FreeTitlesdownLinks{
-    @apply text-[#94a3b8] capitalize text-2xl pb-2 hover:text-blue-700 hover:border-b-2 duration-300 cursor-pointer
+    @apply text-center
+     text-[#94a3b8] capitalize text-2xl border-b border-transparent pb-2 hover:text-blue-700 hover:border-b-blue-700 duration-300 cursor-pointer
 }
 
 .FreeTitlesdownLinks.active{@apply
-text-blue-700 border-b-2 hover:text-[#94a3b8] hover:border-b-0
+text-blue-700 border-b-blue-700 hover:text-[#94a3b8] hover:border-b-[#94a3b8]
 }
 
 

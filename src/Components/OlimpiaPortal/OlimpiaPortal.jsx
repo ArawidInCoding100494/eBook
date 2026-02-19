@@ -6,21 +6,23 @@ import { FaStar } from "react-icons/fa";
 
 const OlimpiaPortal = () => {
   return (
-        <div className="appContainer py-4 my-4 mt-6" id="olimpiaPortal">
+        <div className="appContainer py-4 my-6 mt-6" id="olimpiaPortal">
         
                     <div className="up flex items-center justify-between capitalize py-4 ">
                         <h2 className="flex items-center text-2xl font-medium">
-                <FaArrowTrendUp className="text-[#135bec] mr-2" />
-                recomended for you 
+                            <FaArrowTrendUp className="text-[#135bec] mr-2" />
+                            recomended for you 
                         </h2>
         
-                        <div>
+                        <div className="hidden lg:flex">
                             <p className=" flex items-center text-[#135bec] ">view all <IoIosArrowForward className="ml-2" />
                             </p>
                         </div>
         
                     </div>
-                    <div className="down-cards grid grid-cols-3 gap-3 px-2 ">
+
+
+                    <div className="down-cards grid lg:grid-cols-3 gap-3 px-2 ">
         
         
                         <div className="card bg-[#17202f] h-35 border p-1 px-3 rounded-2xl flex  justify-between ">

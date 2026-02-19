@@ -20,36 +20,46 @@ const Header = () => {
   return (
     <div className=' border-b border-gray-400/20    '> 
 
-      <div className="flex items-center justify-between mx-auto py-3 w-[80%] ">
+      <div className="flex items-center justify-between mx-auto py-3 w-[90%] lg:w-[80%] ">
 
-      <nav className="flex items-center justify-between w-[50%] capitalize ">
+      <nav className="header-left flex items-center justify-between w-[50%] capitalize  ">
      
         
         <NavLink to="/dashboard" className='flex items-center text-2xl font-bold mr-2'>
-         <MdMenuBook className='text-3xl text-[#135bec] mr-2 ' />
-         <h1>E-LIB</h1>
+
+         <MdMenuBook className='text-3xl 
+         bg-blue-700 rounded-xl p-0.5 px-1
+         lg:bg-transparent  lg:p-0 lg:text-[#135bec] lg:mr-2  ' />
+         <h1 className="hidden lg:flex">E-LIB</h1>
         </NavLink>
 
         <NavLink to="/dashboard" className={({isActive})=>
-        isActive
+        `
+        hidden lg:block
+        ${isActive
         ? "text-[#135bec] font-semibold hover:text-white"
-        : "text-white hover:text-[#135bec]"
+        : "text-white hover:text-[#135bec]"}`
         }>
           dashboard
         </NavLink>
 
         <NavLink to="/home" className={({isActive})=>
-        isActive
+        `
+        hidden lg:block
+        ${isActive
         ? "text-[#135bec] font-semibold hover:text-white"
-        : "text-white hover:text-[#135bec]"
+        : "text-white hover:text-[#135bec]"}`
+
         }>
           olimpiada portal  
           </NavLink>
 
           <NavLink to="#" className={({isActive})=>
-        isActive
+        `
+          hidden lg:block
+          ${isActive
         ? "text-[#135bec] font-semibold hover:text-white"
-        : "text-white hover:text-[#135bec]"
+        : "text-white hover:text-[#135bec]"}`
         }>
           My library
           </NavLink>
@@ -59,10 +69,10 @@ const Header = () => {
       
 
 
-      <div className="header-right w-[45%] flex items-center justify-between">
+      <div className="header-right w-[30%] lg:w-[45%] flex items-center justify-between ">
 
-        <div className="search relative ">
-          <input className="bg-[#1e293b] w-[145%] text-[14px] p-2 capitalize pl-8 rounded-2xl"
+        <div className="search relative hidden lg:flex ">
+          <input className="bg-[#1e293b] w-[145%] text-[14px] p-2 capitalize pl-8 rounded-2xl outline-0"
           type="text" placeholder="search books, authors or catigories..." />
           <IoMdSearch className="absolute  top-2.5  left-1" />
         </div>
@@ -81,10 +91,11 @@ const Header = () => {
           </div>
         </div>
         {userValue && 
-          <p className="text-[14px] ml-1">{userValue.name}</p>
+          <p className="hidden lg:flex text-[14px] ml-1">{userValue.name}</p>
           }
         </div>
         </div>
+
       </div>
 
       </div>

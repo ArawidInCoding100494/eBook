@@ -8,10 +8,10 @@ const DashBoard = () => {
   const [activeSection, setActiveSection] = useState("FreeTitles");
 
   return (
-    <div className="dash flex h-[82vh] overflow-hidden">
+    <div className="dash flex flex-col lg:flex lg:flex-row h-full overflow-hidden">
 
       {/* RIGHT SIDEBAR */}
-      <div className="dashRight w-[23%] border border-[#546277] p-2 capitalize">
+      <div className="dashRight  lg:w-[18%] lg:border-[#546277] p-2 capitalize">
         <h3 className="ml-3 text-[#546277] font-bold py-3 text-2xl">
           main genres
         </h3>
@@ -27,21 +27,22 @@ const DashBoard = () => {
             all free
           </button>
 
-          <button
+          {/* <button
             onClick={() => setActiveSection("Science")}
             className={`btnGanres ${
               activeSection === "Science" ? "active" : ""
             }`}
           >
             science
-          </button>
+          </button> */}
+
         </div>
       </div>
 
       {/* LEFT CONTENT (SCROLL) */}
-      <div className="dashLeft flex-1 overflow-y-auto">
+      <div className="dashLeft flex-1 overflow-y-auto ">
         {activeSection === "FreeTitles" && <FreeTitles />}
-        {activeSection === "Science" && <Science />}
+        {/* {activeSection === "Science" && <Science />} */}
       </div>
 
     </div>

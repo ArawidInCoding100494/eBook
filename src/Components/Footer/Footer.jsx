@@ -25,13 +25,14 @@ const Footer = () => {
             <NavLink to="/">contact</NavLink>
           </nav>
         </div>
-        <button
-          className="flex items-center justify-between w-22 border border-white/30 p-1 rounded-2xl hover:cursor-pointer hover:bg-white hover:text-black/70"
+
+        {/* <button
+          className="flex items-center justify-between  p-1 rounded-2xl hover:cursor-pointer  hover:text-white/30"
           onClick={exit}
         >
-          LogOut
+          
           <FaArrowRightFromBracket />
-        </button>
+        </button> */}
       </div>
     </div>
   );

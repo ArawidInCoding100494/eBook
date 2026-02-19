@@ -31,29 +31,39 @@ const Hero = () => {
 
   return (
     <div
-      className="hero appContainer min-h-screen bg-no-repeat bg-center bg-cover "
+      className="hero w-[92%] m-auto  rounded-2xl lg:appContainer min-h-screen bg-no-repeat bg-center bg-cover "
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-      <div className="bg-slate-950/40 h-screen grid grid-cols-2 gap-2 ">
-        <div className="hero_left p-6 bg-gradient-to-r from-slate-950 from-70%">
-          <div className="inline-block px-4 py-1 rounded-full border border-yellow-500/60 bg-yellow-500/20 text-yellow-500 text-2xl font-bold my-3  w-full ">
+      <div className="bg-slate-950/40 h-screen lg:flex">
+
+
+        <div className="hero_left 
+        p-4 lg:p-6 
+        bg-gradient-to-r 
+        from-slate-950 from-70% 
+        lg:w-[50%]
+        min-h-full
+        flex flex-col justify-center
+        ">
+
+          <div className="inline-block px-4 py-1 rounded-full border border-yellow-500/60 bg-yellow-500/20 text-yellow-500 text-xl mb-8 lg:text-2xl font-bold my-3  w-full lg:w-[70%] ">
             🏆 ANNUAL ACADEMIC EVENT
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
+          <h1 className="text-4xl md:text-7xl font-black text-white leading-tight mb-8 lg:mb-6 ">
             National E-book <br />
-            <span className="text-[#ffcc00]">Olympiad 2024</span>
+            <span className="text-[#ffcc00] ">Olympiad 2024</span>
           </h1>
 
-          <p className="text-gray-300 text-lg mb-8 max-w-md">
+          <p className="text-gray-300 text-lg mb-8 w-[90%] ">
             Compete with thousands of readers nationwide. Showcase your
             analytical skills and win prestigious scholarships and awards.
           </p>
 
-          <nav className="flex gap-4">
+          <nav className="flex flex-col lg:flex-row w-50 lg:w-auto gap-4">
             <NavLink
               to="#"
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg shadow-blue-600/30"
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center"
             >
               Join Now →
             </NavLink>
@@ -66,7 +76,12 @@ const Hero = () => {
           </nav>
         </div>
 
-        <div className="hero_right flex items-center justify-center  ">
+        <div className="hero_right 
+        hidden 
+        lg:flex items-center justify-center 
+        h-full  
+        lg:w-[50%]
+        ">
           <div className={`
             w-80 h-100 border-2 border-yellow-500 rounded-2xl p-8
             bg-slate-900/80 backdrop-blur-lg
