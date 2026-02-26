@@ -13,17 +13,17 @@ import { NavLink } from "react-router-dom";
 const FreeTitles = () => {
   const [activeSection, setActiveSection] = useState("FreeTitlesdownLinks")
   return (
-    <section className=" w-[95%] mx-auto">
+    <section className=" w-full mx-auto ">
 
 
       <div className="FreeTitlesUp">
-    <div className=" min-h-screen  my-5
+    <div className=" min-h-screen  py-5
                bg-no-repeat bg-center bg-cover flex flex-col justify-center "
           style={{ backgroundImage: `url(${HeroBg})` }} >
 
-            <div className="flex  ">
+            <div className="flex px-4 h-screen ">
 
-            <div className="FreeTitles-right flex lg:w-[50%] h-full  flex-col  justify-center pl-3">
+            <div className="FreeTitles-right flex lg:w-[50%] h-full   flex-col  justify-center pl-5">
 
               <button className="freeTitles_btn my-5 w-[60%] lg:w-[40%] tracking-[4px] lg:tracking-[2px] text-2xl">free access</button> 
 
@@ -40,7 +40,7 @@ const FreeTitles = () => {
               </div>
             </div>
 
-            <div className="FreeTitles-left hidden lg:flex w-[50%] h-full  flex-col items-center justify-center ">
+            <div className="FreeTitles-left hidden lg:flex w-[50%]  h-full  flex-col items-center justify-center pr-3 ">
             <div className="grid grid-cols-3 gap-5 px-8 mt-22">
 
               {/* 1-card → CHAP */}
@@ -157,7 +157,7 @@ const FreeTitles = () => {
 
 
 
-          <NavLink to="/" className="cards-card shadow rounded-2xl border h-125 relative">
+          <NavLink to="/english" className="cards-card shadow rounded-2xl border h-125 relative">
               <button className="freeTitles_btn uppercase rounded-xl p-0.5 px-1 absolute top-3 right-3">free</button> 
 
             <div className="card_img bg-[#144a58] rounded-2xl h-[75%]">
