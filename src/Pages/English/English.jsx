@@ -238,7 +238,7 @@ const English = () => {
     <div className="enlishDash flex flex-col md:flex-row justify-between text-black min-h-screen">
       
       {/* Sidebar */}
-      <div className="bg-[#ffffff] w-full md:w-[18%] lg:w-[16%] text-[#64748b] capitalize p-5 border-b md:border-b-0 md:border-r border-gray-100">
+      <div className="bg-[#ffffff] w-full md:w-[20%] lg:w-[16%] text-[#64748b] capitalize p-5 border-b md:border-b-0 md:border-r border-gray-100">
         <h3 className="uppercase font-bold mb-4">
             {lang === 'uz' ? 'Kategoriyalar' : lang === 'ru' ? 'Категории' : 'Categories'}
         </h3>

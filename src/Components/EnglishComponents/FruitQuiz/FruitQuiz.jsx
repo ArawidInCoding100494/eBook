@@ -32,12 +32,12 @@ const FruitQuiz = () => {
     <div className="min-h-screen bg-gradient-to-br from-[#b8ffcf] to-[#eaffb8] font-['Comic_Sans_MS',_cursive] pb-20">
       
       {/* Home/Back Button */}
-      <a 
-        className="fixed top-5 left-5 bg-white text-black py-2.5 px-[18px] rounded-[30px] font-bold shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform z-[1000]"
-        onClick={()=>navigate(-1)}
+      <NavLink to="/english"
+        className="fixed top-5 left-5 bg-white text-black py-2.5 px-4.5 rounded-[30px] font-bold shadow-[0_5px_15px_rgba(0,0,0,0.2)] hover:scale-105 transition-transform z-1000"
+       
       >
         🏠 Back
-      </a>
+      </NavLink>
 
       <div className="flex flex-col items-center pt-20 gap-20">
         <h1 className="text-[36px] font-bold text-[#ff5c5c] text-center">

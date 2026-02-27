@@ -1,11 +1,11 @@
 import { useState } from "react"
 import HeroBg from "../../../Images/HeroBg.png"
 import featured from "../../../Images/featured.png"
-import { RiGalleryView2 } from "react-icons/ri";
-import { RiTableView } from "react-icons/ri";
 import { FaStar } from "react-icons/fa";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import LearnMath from "../../../../public/NewImages/LearnMath.png"
+import LearnEnglish from "../../../../public/NewImages/LearnEnglish.jpg"
 
 
 
@@ -77,10 +77,10 @@ const FreeTitles = () => {
 
 
 
-    <div className="FreeTitlesdown min-h-screen mt-4  relative pb-16">
+    <div className="FreeTitlesdown min-h-screen mt-4  relative pb-16 pl-3">
 
 
-      <div className="FreeTitlesdown-header flex items-center justify-between border-b pb-1.5 pt-4 border-gray-400/40">
+      <div className="FreeTitlesdown-header  flex items-center justify-between border-b pb-1.5 pt-4 border-gray-400/40">
 
         <div className="FreeTitlesdown-header-links lg:w-[60%] p-2 flex items-center justify-between  ">
 
@@ -126,15 +126,15 @@ const FreeTitles = () => {
 
       <div className="FreeTitlesdown-main my-6">
 
-        <div className="main-cards grid grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="main-cards grid grid-cols-2 lg:grid-cols-4 gap-5 ">
 
 
-          <NavLink  to="/mathPage" className="cards-card shadow rounded-2xl border h-125 relative"
+          <NavLink  to="/mathPage" className="cards-card shadow rounded-2xl border h-125 relative transition-transform duration-300 hover:scale-105 bg-gray-300/10"
           >
               <button className="freeTitles_btn uppercase rounded-xl p-0.5 px-1 absolute top-3 right-3">free</button> 
 
-            <div className="card_img bg-[#144a58] rounded-2xl h-[75%]">
-              <img className="rounded-2xl w-[85%] m-auto py-1 h-full" src={HeroBg} alt="" />
+            <div className="card_img bg-[#144a58] rounded-2xl h-[60%]">
+              <img className="rounded-2xl w-[85%] m-auto py-1 max-h-full object-contain" src={LearnMath} alt="" />
             </div>
 
             <div className="card_content h-[25%] p-2 capitalize ">
@@ -157,11 +157,11 @@ const FreeTitles = () => {
 
 
 
-          <NavLink to="/english" className="cards-card shadow rounded-2xl border h-125 relative">
+          <NavLink to="/english" className="cards-card shadow rounded-2xl border h-125 relative transition-transform duration-300 hover:scale-105 bg-gray-300/10">
               <button className="freeTitles_btn uppercase rounded-xl p-0.5 px-1 absolute top-3 right-3">free</button> 
 
-            <div className="card_img bg-[#144a58] rounded-2xl h-[75%]">
-              <img className="rounded-2xl w-[85%] m-auto py-1 h-full" src={HeroBg} alt="" />
+            <div className="card_img bg-[#144a58] rounded-2xl h-[60%]">
+              <img className="rounded-2xl w-[85%] m-auto py-1 max-h-full object-contain  " src={LearnEnglish} alt="" />
             </div>
 
             <div className="card_content h-[25%] p-2 capitalize ">
@@ -187,11 +187,11 @@ const FreeTitles = () => {
 
 
 
-          <div className="cards-card shadow rounded-2xl border h-125 relative">
+          <div className="cards-card shadow rounded-2xl border h-125 relative bg-gray-300/10 duration-300 hover:scale-105">
               <button className="freeTitles_btn uppercase rounded-xl p-0.5 px-1 absolute top-3 right-3">free</button> 
 
-            <div className="card_img bg-[#144a58] rounded-2xl h-[75%]">
-              <img className="rounded-2xl w-[85%] m-auto py-1 h-full" src={HeroBg} alt="" />
+            <div className="card_img bg-[#144a58] rounded-2xl h-[60%]">
+              <img className="rounded-2xl w-[85%] m-auto py-1 max-h-full object-contain " src={HeroBg} alt="" />
             </div>
 
             <div className="card_content h-[25%] p-2 capitalize ">
@@ -222,16 +222,16 @@ const FreeTitles = () => {
 
       <div class="FreeTitlesdown-footer py-3 flex items-center justify-between w-full lg:w-80 absolute bottom-3 left-1/2 -translate-x-1/2">
 
-        <p className="flex items-center capitalize w-22 justify-between text-[#94a3b8] cursor-pointer">
-          <FaAngleLeft className="text-xl cursor-pointer hover:text-blue-700" />
+        <p className="flex items-center capitalize w-22 justify-between text-[#94a3b8] cursor-pointer hover:text-blue-700">
+          <FaAngleLeft className="text-xl cursor-pointer " />
           previous
         </p>
         
-        <p className="tracking-[8px]">123...12</p>
+        <p className="tracking-[8px] cursor-pointer">123...12</p>
 
-        <p className="flex items-center capitalize w-14 justify-between text-[#94a3b8] cursor-pointer">
+        <p className="flex items-center capitalize w-14 justify-between text-[#94a3b8] cursor-pointer hover:text-blue-700">
           next
-          <FaAngleRight className="text-xl cursor-pointer hover:text-blue-700" />
+          <FaAngleRight className="text-xl cursor-pointer " />
         </p>
       </div>
 

@@ -7,12 +7,11 @@ const GrammarThisThat = () => {
     <div className="min-h-screen bg-[#cce7ff] font-['Comic_Sans_MS',_cursive] flex justify-center items-center p-4">
       
       {/* Home Button */}
-      <a 
-        href="index.html" 
+      <NavLink to="/grammarToBe"
         className="fixed top-5 left-5 bg-white text-black py-3 px-5 rounded-[25px] text-lg font-bold shadow-[0_6px_15px_rgba(0,0,0,0.25)] transition-all duration-300 hover:bg-[#eaac40] hover:scale-110 z-[1000]"
       >
         🏠 Home
-      </a>
+      </NavLink>
 
       {/* Back Button */}
       <a  

@@ -57,13 +57,6 @@ const GamePage = () => {
             Word<span className="text-[#06D6A0]">Wonderland</span>
           </h1>
         </div>
-        <nav className="flex gap-4">
-          {['Home', 'For Kids', 'For Parents', 'Game'].map((item) => (
-            <a key={item} href="#" className="font-bold text-[#333344] hover:bg-[#FFD166] px-4 py-2 rounded-full transition-all">
-              {item}
-            </a>
-          ))}
-        </nav>
       </div>
 
       {/* Main Game Card */}

@@ -29,12 +29,11 @@ const LearnFruits = () => {
     <div className="min-h-screen bg-gradient-to-r from-[#a1ffce] to-[#faffd1] font-['Comic_Sans_MS',sans-serif] text-center p-0 m-0">
       
       {/* Home Button */}
-      <a 
-        href="index.html" 
+      <NavLink to="/learnFruits"
         className="fixed top-5 left-5 bg-white text-black py-[12px] px-[20px] rounded-[25px] text-[18px] font-bold shadow-[0_6px_15px_rgba(0,0,0,0.25)] transition-all duration-300 hover:bg-[#eaac40] hover:scale-110 z-[1000] max-[600px]:text-[14px] max-[600px]:py-[8px] max-[600px]:px-[14px]"
       >
         🏠 Home
-      </a>
+      </NavLink>
 
       <h1 className="my-[25px] text-[#ff5722] text-[38px] font-bold max-[600px]:text-[26px] max-[600px]:mt-[80px]">
         🍓 Fruit Vocabulary 🍎

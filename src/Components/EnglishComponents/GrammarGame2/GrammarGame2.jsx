@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 
 const GrammarGame2 = () => {
   const [results, setResults] = useState({});
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
   const sections = [
     {
@@ -48,7 +48,7 @@ const GrammarGame2 = () => {
     <div className="min-h-screen bg-gradient-to-br from-[#b8ffcf] to-[#eaffb8] font-['Comic_Sans_MS',_cursive] p-5 pb-20 text-center">
       
       {/* Home Button */}
-      <a href="vocab.html" className="fixed top-5 left-5 bg-white py-2 px-5 rounded-full font-bold shadow-md hover:scale-110 transition-transform z-50">🏠 Back</a>
+      <NavLink to="/fruitQuiz" className="fixed top-5 left-5 bg-white text-black py-2 px-5 rounded-full font-bold shadow-md hover:scale-110 transition-transform z-50">🏠 Back </NavLink>
 
       <div className="max-w-4xl mx-auto flex flex-col gap-16 pt-10">
         {sections.map((section, sIdx) => (

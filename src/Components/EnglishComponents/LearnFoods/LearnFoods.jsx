@@ -30,12 +30,11 @@ const LearnFoods = () => {
     <div className="min-h-screen bg-gradient-to-r from-[#a1ffce] to-[#faffd1] font-['Comic_Sans_MS',_sans-serif] text-center p-0 m-0">
       
       {/* Home Button */}
-      <a 
-        href="index.html" 
+      <NavLink to="/learnFruits"
         className="fixed top-5 left-5 bg-white text-black py-3 px-5 rounded-[25px] text-lg font-bold shadow-[0_6px_15px_rgba(0,0,0,0.25)] transition-all duration-300 hover:bg-[#eaac40] hover:scale-110 z-[1000] max-[600px]:text-sm max-[600px]:py-2 max-[600px]:px-3.5"
       >
         🏠 Home
-      </a>
+      </NavLink>
 
       <h1 className="my-6 text-[#ff5722] text-[38px] font-bold max-[600px]:text-[26px] max-[600px]:mt-20">
         🍰 Food Vocabulary 🍕

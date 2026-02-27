@@ -151,32 +151,7 @@ const AbcBook = () => {
         ))}
       </div>
 
-      {/* Language Switch */}
-      {/* <div className="fixed top-5 right-5 flex gap-2 bg-white p-2 rounded-2xl shadow-xl z-[9999]">
-        <button className="px-3 py-2 bg-[#4caf50] text-white rounded-xl text-sm font-bold">EN English</button>
-        <button className="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-xl text-sm font-bold transition-colors">RU Русский</button>
-        <button className="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-xl text-sm font-bold transition-colors">UZ O'zbekcha</button>
-      </div> */}
-
-      {/* Header */}
-      <header className="relative bg-gradient-to-r from-[#ff9e6d] to-[#ff6b9d] rounded-b-[25px] py-8 shadow-lg overflow-hidden text-white">
-        <div className="max-w-6xl mx-auto px-5">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-4">
-              <div className="text-4xl animate-bounce">📚</div>
-              <div>
-                <h1 className="text-4xl font-black tracking-tight">Word<span className="text-[#06D6A0]">Wonderland</span></h1>
-                <p className="text-sm opacity-90">Fun with phonics, sentences, stories, and songs!</p>
-              </div>
-            </div>
-            <nav className="flex gap-4">
-              <a href="#" className="px-4 py-2 hover:bg-[#FFD166] hover:text-gray-800 rounded-full font-bold transition-all">Home</a>
-              <a href="#" className="px-4 py-2 hover:bg-[#FFD166] hover:text-gray-800 rounded-full font-bold transition-all">For Kids</a>
-              <a href="#" className="px-4 py-2 hover:bg-[#FFD166] hover:text-gray-800 rounded-full font-bold transition-all">Games</a>
-            </nav>
-          </div>
-        </div>
-      </header>
+    
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto p-5 grid grid-cols-1 lg:grid-cols-3 gap-8">
